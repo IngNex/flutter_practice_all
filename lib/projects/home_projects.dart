@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_all/projects/provider_practice/main_provider_practice.dart';
 
 class HomeProjects extends StatelessWidget {
   const HomeProjects({super.key});
@@ -16,10 +17,11 @@ class HomeProjects extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomeProjects(),
-                  )),
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MainProviderPractice(),
+                ),
+              ),
               child: const Text('Provider Practice'),
             ),
           ],
