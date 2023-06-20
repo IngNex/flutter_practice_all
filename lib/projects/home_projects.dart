@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_all/projects/drawer_practice/main_drawer_practice.dart';
 import 'package:flutter_practice_all/projects/provider_practice/main_provider_practice.dart';
 
 class HomeProjects extends StatelessWidget {
@@ -23,6 +24,15 @@ class HomeProjects extends StatelessWidget {
                 ),
               ),
               child: const Text('Provider Practice'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MainDrawerPractice(),
+                ),
+              ),
+              child: const Text('Drawer Practice'),
             ),
           ],
         ),
