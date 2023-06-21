@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice_all/projects/drawer_practice/main_drawer_practice.dart';
 import 'package:flutter_practice_all/projects/provider_practice/main_provider_practice.dart';
+import 'package:flutter_practice_all/projects/search_API_practice/main_search_api.dart';
 
 class HomeProjects extends StatelessWidget {
   const HomeProjects({super.key});
@@ -33,6 +34,15 @@ class HomeProjects extends StatelessWidget {
                 ),
               ),
               child: const Text('Drawer Practice'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MainSearchPractice(),
+                ),
+              ),
+              child: const Text('Search Api Practice'),
             ),
           ],
         ),
